@@ -165,6 +165,7 @@ function hideGrid(){
     }
 }
 canvas.addEventListener("touchmove",(e)=>{
+    e.preventDefault();
     if(grid){
         for(let i=0;i<blocks.length;i++){
             for(let j=0;j<blocks[i].length;j++){
